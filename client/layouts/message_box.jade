@@ -1,0 +1,18 @@
+template(name='message_box')
+  div.message-box
+    div.message-box-head
+      a(href='#') Hide
+        span.glyphicon.glyphicon-chevron-right.pull-right
+    div.messages
+      +each messages
+        if isOwner user_from
+          div.message.panel.panel-warning
+            div.panel-body {{message}}
+        else
+          div.message.panel.panel-info
+            div.panel-body {{message}}
+
+    textarea.col-md-12.col-xs-12
+    input(type='hidden' value='{{user_to}}')#user_to_id
+    input(type='hidden' value='{{_id}}')#dialog_id
+    a.btn.btn-primary.col-md-12.col-xs-12.send-message Send

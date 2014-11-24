@@ -1,0 +1,80 @@
+/* line 1, ../sass/main.sass */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 5, ../sass/main.sass */
+body {
+  margin-bottom: 60px;
+}
+/* line 8, ../sass/main.sass */
+body > .container {
+  padding: 60px 15px 0;
+}
+
+/* line 11, ../sass/main.sass */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: whitesmoke;
+}
+/* line 18, ../sass/main.sass */
+.footer .container .text-muted {
+  margin: 20px 0;
+}
+
+/* line 21, ../sass/main.sass */
+.panel-warning {
+  background-color: #faebcc;
+}
+
+/* line 24, ../sass/main.sass */
+.panel-info {
+  background-color: #bce8f1;
+}
+
+/* line 27, ../sass/main.sass */
+.message-box {
+  height: 92%;
+  width: 300px;
+  position: fixed;
+  right: -300px;
+  top: 0;
+  z-index: 9999;
+  background-color: #ededed;
+  display: none;
+}
+/* line 36, ../sass/main.sass */
+.message-box .message-box-head {
+  background-color: #101010;
+  height: 51px;
+  padding: 0 10px;
+  line-height: 50px;
+}
+/* line 41, ../sass/main.sass */
+.message-box .message-box-head span {
+  line-height: 45px;
+}
+/* line 43, ../sass/main.sass */
+.message-box .message-box-head a {
+  color: white;
+  display: block;
+}
+/* line 46, ../sass/main.sass */
+.message-box .messages {
+  height: 84%;
+  overflow-y: scroll;
+  padding: 0 10px;
+  padding-top: 10px;
+}
+/* line 51, ../sass/main.sass */
+.message-box .messages .message {
+  margin-bottom: 10px;
+}
+/* line 53, ../sass/main.sass */
+.message-box textarea {
+  height: 10%;
+}
